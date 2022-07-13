@@ -6,7 +6,7 @@ import Stack from '@mui/material/Stack';
 import axios from 'axios';
 const api_key = "-"
 
-function Template1() {
+function LittleReminder() {
 
 
 
@@ -44,7 +44,7 @@ function Template1() {
 
 return (
 <Box sx={{ minWidth: 120, padding: 5 }}>
-  <p>Template 1</p>
+  <p>Little Reminder</p>
  
 
   <FormControl fullWidth>
@@ -59,4 +59,4 @@ return (
   );
 }
 
-export default Template1;
+export default LittleReminder;

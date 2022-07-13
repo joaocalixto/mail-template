@@ -1,7 +1,6 @@
 # Getting Started with Create React App
 
- https://mui.com/pt/material-ui/react-autocomplete/
- 
+ <!-- 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 -->
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

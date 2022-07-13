@@ -4,7 +4,9 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
-import Template1 from './templates/Template1';
+import HappyBirthday from './templates/HappyBirthday';
+import AutomaticAnswer from './templates/AutomaticAnswer';
+import LittleReminder from './templates/LittleReminder';
 
 
 
@@ -12,9 +14,9 @@ function App() {
 
   const options = [
     {value: '', text: '--Escolha uma opcao--'},
-    {value: 'apple', text: 'Apple 🍏'},
-    {value: 'banana', text: 'Banana 🍌'},
-    {value: 'kiwi', text: 'Kiwi 🥝'},
+    {value: 'happyBirthday', text: 'Happy Birthday'},
+    {value: 'automaticAnswer', text: 'Automatic Answer'},
+    {value: 'littleReminder', text: 'Little Reminder'},
   ];
 
   const [selected, setSelected] = useState(options[0].value);
@@ -41,11 +43,21 @@ function App() {
 </FormControl>
 
 
-    {
-      selected === 'apple' && (
-        <Template1/>
-      )
-    }
+  {
+    selected === 'happyBirthday' && (
+      <HappyBirthday/>
+    )
+  }
+  {
+    selected === 'automaticAnswer' && (
+      <AutomaticAnswer/>
+    )
+  }
+  {
+    selected === 'littleReminder' && (
+      <LittleReminder/>
+    )
+  }
 </Box>
   );
 }
